@@ -1,0 +1,32 @@
+{
+    "ingestion_type":"keywords",
+    "delimiter":",",
+    "quotechar":"\"",
+    "transformations":{
+        "keywords":{
+            "top-level":[
+                "malformedJsonToDict"
+            ],
+            "sub-level":{
+
+            }
+        }
+    },
+    "validations":{
+        "keywords":{
+            "top-level":[
+                "notNull"
+            ],
+            "sub-level":{
+
+            }
+        },
+        "id":{
+            "top-level":[
+                "notNull",
+                "isInteger"
+            ]
+        }
+
+    }
+}

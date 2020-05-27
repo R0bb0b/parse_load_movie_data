@@ -1,0 +1,26 @@
+{
+    "ingestion_type":"links",
+    "delimiter":",",
+    "quotechar":"\"",
+    "transformations":{},
+    "validations":{
+        "movieId":{
+            "top-level":[
+                "notNull",
+                "isInteger"
+            ]
+        },
+        "imdbId":{
+            "top-level":[
+                "notNull:skip"
+            ]
+        },
+        "tmdbId":{
+            "top-level":[
+                "notNull:skip",
+                "isInteger:skip"
+            ]
+        }
+
+    }
+}

@@ -1,0 +1,5 @@
+python3 ingestSource.py '["data/credits.csv"]' config/credits.json output
+python3 ingestSource.py '["data/keywords.csv"]' config/keywords.json output
+python3 ingestSource.py '["data/links.csv", "data/links_small.csv"]' config/links.json output
+python3 ingestSource.py '["data/ratings.csv", "data/ratings_small.csv"]' config/ratings.json output
+python3 ingestSource.py '["data/movies_metadata.csv"]' config/movies_metadata.json output

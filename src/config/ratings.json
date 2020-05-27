@@ -1,0 +1,39 @@
+{
+    "ingestion_type":"ratings",
+    "delimiter":",",
+    "quotechar":"\"",
+    "transformations":{
+        "timestamp":{
+            "top-level":[
+                "unixTimestampToSql"
+            ]
+        }
+    },
+    "validations":{
+        "userId":{
+            "top-level":[
+                "notNull",
+                "isInteger"
+            ]
+        },
+        "movieId":{
+            "top-level":[
+                "notNull",
+                "isInteger"
+            ]
+        },
+        "rating":{
+            "top-level":[
+                "notNull",
+                "isDecimal"
+            ]
+        },
+        "timestamp":{
+            "top-level":[
+                "notNull",
+                "isInteger"
+            ]
+        }
+
+    }
+}

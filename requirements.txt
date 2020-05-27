@@ -1,0 +1,5 @@
+wget>=3.2
+boto3
+psycopg2
+pytest
+pytest-cov

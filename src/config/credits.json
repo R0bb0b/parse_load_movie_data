@@ -1,0 +1,36 @@
+{
+    "ingestion_type":"credits",
+    "delimiter":",",
+    "quotechar":"\"",
+    "transformations":{
+        "cast":{
+            "top-level":[
+                "malformedJsonToDict"
+            ]
+        },
+        "crew":{
+            "top-level":[
+                "malformedJsonToDict"
+            ]
+        }
+    },
+    "validations":{
+        "cast":{
+            "top-level":[
+                "notNull"
+            ]
+        },
+        "crew":{
+            "top-level":[
+                "notNull"
+            ]
+        },
+        "id":{
+            "top-level":[
+                "notNull",
+                "isInteger"
+            ]
+        }
+
+    }
+}
